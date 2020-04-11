@@ -1,21 +1,15 @@
-# Kickstart
-
-## DHCP
 ```bash
 inst.ks=http://10.0.0.2/ks.cfg ip=dhcp
 ```
 
-## Static ip (old)
 ```bash
 inst.ks=http://10.0.0.2/ks.cfg ip=10.0.0.3 gw=10.0.0.1 netmask=255.0.0.0
 ```
 
-## Static ip (new)
 ```bash
 inst.ks=http://10.0.0.2/ks.cfg ip=10.0.0.3::10.0.0.1:255.0.0.0
 ```
 
-## ks.cfg
 ```bash
 auth --enableshadow --passalgo=sha512
 cdrom
